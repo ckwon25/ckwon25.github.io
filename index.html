@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calvin Kwon — Portfolio</title>
+<meta name="description" content="Calvin Kwon — Computer Engineering student at UVA building security, AI, and IoT systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="#top" class="nav-logo">CK</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-kicker">Hi, I'm</p>
+      <h1 class="hero-name">Calvin Kwon</h1>
+      <p class="hero-title">Computer Engineering @ UVA — building security, AI &amp; IoT systems</p>
+      <p class="hero-sub">I build full-stack tools that solve real problems for real teams — from network security platforms to race-day telemetry.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/ckwon25" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/calvin-kwon-630259289" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">·</span>
+        <a href="mailto:jnb7rw@virginia.edu">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="section-title"><span class="section-num">01.</span> About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a Computer Engineering student in the School of Engineering and Applied Science at the University of Virginia (Class of 2029, GPA 3.9). I like building things that touch the real world — security tooling, IoT hardware, and applied AI — and I like building them for an actual team or user, not just a demo.</p>
+        <p>Recent work spans leading a 6-person team through Microsoft's Garage student pilot program, engineering a patent-pending race-tracking system for UVA's rowing club, and researching post-quantum cryptography at the Virginia Tech Innovation Campus.</p>
+        <p>Outside of code: I'm the head freshman coxswain for Virginia Men's Rowing, an Eagle Scout, and I run a small independent mobile haircutting business serving 85+ clients around UVA and Northern Virginia.</p>
+      </div>
+      <div class="about-facts">
+        <div class="fact"><span class="fact-label">Education</span><span class="fact-value">B.S. Computer Engineering, University of Virginia — Expected May 2029</span></div>
+        <div class="fact"><span class="fact-label">Based in</span><span class="fact-value">Charlottesville, VA</span></div>
+        <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Security · Applied AI · IoT · Full-Stack</span></div>
+        <div class="fact"><span class="fact-label">Currently</span><span class="fact-value">Research Intern, Virginia Tech Innovation Campus</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title"><span class="section-num">02.</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages &amp; Frameworks</h3>
+        <ul class="tag-list">
+          <li>JavaScript</li><li>TypeScript</li><li>Python</li><li>Node.js</li><li>Firebase</li><li>FlutterFlow</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Security &amp; Cloud</h3>
+        <ul class="tag-list">
+          <li>Network Security</li><li>Applied Cryptography</li><li>AWS</li><li>Microsoft Azure</li><li>Vulnerability Detection</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Hardware &amp; AI</h3>
+        <ul class="tag-list">
+          <li>Arduino / IoT</li><li>Qiskit (Quantum Computing)</li><li>GPT-4o API</li><li>OCR / Ollama</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Certifications</h3>
+        <ul class="tag-list">
+          <li>CompTIA Security+</li><li>CompTIA A+</li><li>AWS CCP</li><li>Microsoft SC-900</li><li>Microsoft AZ-900</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title"><span class="section-num">03.</span> Projects</h2>
+    <p class="section-intro">A few things I've built recently, and who they were built for.</p>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Featured projects (static, rich context) -->
+      <article class="project-card featured">
+        <div class="project-top">
+          <h3>Gatekeeper</h3>
+          <span class="project-for">Built for: Microsoft Garage Student Pilot Program</span>
+        </div>
+        <p>Open-air network vulnerability detection platform. Led a team of 6 to design and deploy a full-stack security tool that uses the GPT-4o API via Node.js to analyze network traffic and flag potential breaches.</p>
+        <div class="project-tags"><span>Node.js</span><span>GPT-4o API</span><span>Security</span><span>Team Lead</span></div>
+        <div class="project-links">
+          <a href="https://github.com/ckwon25" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card featured">
+        <div class="project-top">
+          <h3>BoatMeter</h3>
+          <span class="project-for">Built for: Virginia Men's Rowing Club</span>
+        </div>
+        <p>End-to-end real-time race tracking system (two pending patents) integrating Arduino-based IoT sensors with a live FlutterFlow UI. Node.js + Firebase backend manages live telemetry and performance analytics. Field-tested during club sessions on the Occoquan River.</p>
+        <div class="project-tags"><span>Arduino</span><span>IoT</span><span>FlutterFlow</span><span>Firebase</span></div>
+        <div class="project-links">
+          <a href="https://github.com/ckwon25/BoatMeter" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card featured">
+        <div class="project-top">
+          <h3>Qiskit QRNG Research</h3>
+          <span class="project-for">Built for: Independent Research</span>
+        </div>
+        <p>Benchmarked quantum vs. pseudo-random number generators by implementing a QRNG model in Python and Qiskit. Validated higher entropy scores across 100+ trials, showing increased resistance to predictive attacks vs. traditional generators.</p>
+        <div class="project-tags"><span>Python</span><span>Qiskit</span><span>Quantum Computing</span></div>
+        <div class="project-links">
+          <a href="https://github.com/ckwon25/qiskitresearch" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="more-title">More from GitHub</h3>
+    <div class="projects-grid projects-grid-compact" id="moreProjectsGrid">
+      <p class="loading-text" id="loadingText">Loading repositories from GitHub…</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="resume">
+    <h2 class="section-title"><span class="section-num">04.</span> Resume</h2>
+    <div class="resume-box">
+      <p>Want the full breakdown — education, work history, honors, and certifications?</p>
+      <a href="Calvin_Kwon_Resume.pdf" target="_blank" class="btn btn-primary" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title"><span class="section-num">05.</span> Contact</h2>
+    <p class="section-intro">Reach out — happy to talk about projects, internships, or collaborations.</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:jnb7rw@virginia.edu">
+        <span class="contact-label">School Email</span>
+        <span class="contact-value">jnb7rw@virginia.edu</span>
+      </a>
+      <a class="contact-card" href="mailto:calvinandwaddles@gmail.com">
+        <span class="contact-label">Personal Email</span>
+        <span class="contact-value">calvinandwaddles@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/calvin-kwon-630259289" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">calvin-kwon-630259289</span>
+      </a>
+      <a class="contact-card" href="https://github.com/ckwon25" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@ckwon25</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Calvin Kwon · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
