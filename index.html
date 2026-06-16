@@ -30,7 +30,13 @@
   h1 {
     font-size: 28px;
     font-weight: 700;
-    margin: 0 0 12px;
+    margin: 0 0 8px;
+  }
+
+  .tagline {
+    color: #5b5650;
+    margin: 0 0 24px;
+    font-size: 15px;
   }
 
   h2 {
@@ -40,7 +46,7 @@
   }
 
   .links {
-    margin: 0 0 32px;
+    margin: 0 0 28px;
   }
 
   .links a {
@@ -71,12 +77,32 @@
     text-decoration: none;
   }
 
-  a:visited {
-    color: #c2185b;
-  }
-
   a:hover {
     text-decoration: underline;
+  }
+
+  .c-orange { color: #ff8c00; }
+  .c-red { color: #d62828; }
+  .c-black { color: #2b2b2b; }
+
+  ul.certs {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  ul.certs li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 12px;
+  }
+
+  ul.certs img {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    flex-shrink: 0;
   }
 </style>
 </head>
@@ -84,15 +110,15 @@
 <div class="wrap">
 
   <h1>Calvin Kwon</h1>
+  <p class="tagline">CpE, EE &amp; Applied Math @ UVA — c/o '29</p>
+
   <p class="links">
-    <a href="mailto:calvink12602@gmail.com">calvink12602@gmail.com</a> ·
-    <a href="mailto:jnb7rw@virginia.edu">jnb7rw@virginia.edu</a> ·
+    <a href="mailto:jnb7rw@virginia.edu">Contact me</a> ·
     <a href="https://github.com/ckwon25" target="_blank" rel="noopener">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/calvin-kwon-630259289" target="_blank" rel="noopener">LinkedIn</a> ·
-    <a href="Calvin_Kwon_Resume.pdf" target="_blank">Resume</a>
+    <a href="https://www.linkedin.com/in/calvin-kwon-630259289" target="_blank" rel="noopener">LinkedIn</a>
   </p>
 
-  <p>Second year Computer Engineering student at UVA. I <a href="https://www.instagram.com/kcutva" target="_blank" rel="noopener">cut hair</a> and <a href="https://www.instagram.com/vmensrowing" target="_blank" rel="noopener">yell at people in boats</a> for fun. I'm also production manager for <a href="https://www.instagram.com/tedxuva" target="_blank" rel="noopener">TEDxUVA</a> and a video editor for <a href="https://www.instagram.com/vmagatuva" target="_blank" rel="noopener">V Magazine</a>.</p>
+  <p>I <a class="c-orange" href="https://www.instagram.com/kcutva" target="_blank" rel="noopener">cut hair</a> and <a class="c-orange" href="https://www.instagram.com/vmensrowing" target="_blank" rel="noopener">yell at people in boats</a> for fun. I'm also production manager for <a class="c-red" href="https://www.instagram.com/tedxuva" target="_blank" rel="noopener">TEDxUVA</a> and a video editor for <a class="c-black" href="https://www.instagram.com/vmagatuva" target="_blank" rel="noopener">V Magazine</a>.</p>
 
   <h2>Projects</h2>
   <ul class="projects">
@@ -104,7 +130,13 @@
   </ul>
 
   <h2>Certifications</h2>
-  <p>CompTIA Security+ (2025), CompTIA A+ (2024), AWS Cloud Practitioner (2025), Microsoft SC-900 (2024), Microsoft AZ-900 (2024), ITS Cloud Computing (2025), ITS Network Security (2025), ITS Cybersecurity (2025), TestOut Security Pro (2025), TestOut PC Pro (2025).</p>
+  <ul class="certs">
+    <li><img src="https://www.google.com/s2/favicons?domain=comptia.org&sz=64" alt="CompTIA" /> CompTIA Security+ (2025), CompTIA A+ (2024)</li>
+    <li><img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=64" alt="AWS" /> AWS Cloud Practitioner (2025)</li>
+    <li><img src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=64" alt="Microsoft" /> Microsoft SC-900 (2024), Microsoft AZ-900 (2024)</li>
+    <li><img src="https://www.google.com/s2/favicons?domain=certiport.pearsonvue.com&sz=64" alt="Certiport" /> ITS: Cloud Computing (2025), Network Security (2025), Cybersecurity (2025)</li>
+    <li><img src="https://www.google.com/s2/favicons?domain=testout.com&sz=64" alt="TestOut" /> TestOut Security Pro (2025), TestOut PC Pro (2025)</li>
+  </ul>
 
 </div>
 </body>
